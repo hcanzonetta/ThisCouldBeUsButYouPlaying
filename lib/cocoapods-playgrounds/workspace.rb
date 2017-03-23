@@ -126,6 +126,9 @@ module Pod
 
     def generate_podfile
       contents = <<-EOT
+source 'git@github.com:despegar/ios-app-specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
 use_frameworks!
 
 target '#{target_name}' do
